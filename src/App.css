@@ -1,0 +1,86 @@
+*{
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+.App {
+
+  max-width: 400px;
+  margin: auto;
+  padding: 1rem;
+  text-align: center;
+}
+
+.App .date{
+
+  margin: 3px 0 4px 14px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.App .date p{
+
+  padding: 3px;
+  font-size: 1.2rem;
+  background-color: rgb(214, 169, 21);
+}
+.App .form-input{
+
+  position: relative;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.App .form-input .icons{
+
+  position: absolute;
+  top: 0;
+  left: 15px;
+  display: flex;
+  height: 100%;
+  font-size: 25px;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.App form input{
+
+  margin: 5px;
+  border: 2px solid  rgb(214, 169, 21); 
+  padding: 10px 10px 5px 50px;
+  font-size: 15px;
+  line-height: 30px;
+  outline: 0;
+  display: block;
+  width: 100%;
+  border-radius: 10;
+
+}
+
+
+.App .task-row{
+
+  border: 2px solid rgb(214, 169, 21);
+  line-height: 30px;
+  margin: 5px 0 0 5px;
+  padding: 5px;
+  font-size: 18px;
+  width: 98%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-transform: capitalize;
+  cursor: pointer;
+
+}
+
+.flag{
+  background-color: rgb(214, 169, 21);
+  text-decoration: line-through;
+}
