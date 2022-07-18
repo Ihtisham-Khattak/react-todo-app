@@ -60,9 +60,11 @@ const month = ['January', 'February', 'March', 'April', 'May', 'June', 'July', '
         </h1>
 
         <div className="date">
+    
           <p>{day[date.getDay()]}</p>
           <p>{date.getDate()}</p>
-          <p>{month[date.getMonth()-1]}</p>
+      
+          <p>{month[date.getMonth()]}</p>
           <p>{date.getFullYear()}</p>
 
         </div>
@@ -70,14 +72,16 @@ const month = ['January', 'February', 'March', 'April', 'May', 'June', 'July', '
         <form onSubmit={add_todo_func}>
 
 
-
+{/* 
           <div className="from-search">
 
             <input type="text" placeholder="Search Task"/>
 
-          </div>
+          </div> */}
 
           <div className="form-input">
+
+
 
           <GrAdd className="icons" />
           
@@ -89,6 +93,7 @@ const month = ['January', 'February', 'March', 'April', 'May', 'June', 'July', '
               setInput(e.target.value);
             }}
             placeholder="Add Todo"
+            required
           />
           </div>
          
